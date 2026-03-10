@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples de Composants - U.S.O.Bezons Tennis</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles de la charte -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-text);
+            background: var(--color-neutral-light);
+        }
+        
+        .demo-section {
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .demo-section:nth-child(odd) {
+            background: var(--color-neutral);
+        }
+        
+        .demo-title {
+            font-family: var(--font-title);
+            font-size: var(--font-size-h2);
+            color: var(--color-primary);
+            margin-bottom: var(--space-lg);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .component-preview {
+            padding: var(--space-md);
+            border: 2px dashed var(--color-neutral-dark);
+            border-radius: var(--radius-md);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="tennis-header">
+        <nav class="tennis-nav">
+            <div style="flex: 1;">
+                <span style="font-size: 1.5em; font-weight: bold;">U.S.O.BEZONS TENNIS</span>
+            </div>
+            <a href="#" class="tennis-nav-link active">Accueil</a>
+            <a href="#" class="tennis-nav-link">Le Club</a>
+            <a href="#" class="tennis-nav-link">Cours</a>
+            <a href="#" class="tennis-nav-link">Tarifs</a>
+            <a href="#" class="tennis-nav-link cta">Inscription</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="tennis-hero">
+        <div class="tennis-ball-decoration" style="position: absolute; top: 50px; right: 100px; width: 150px; height: 150px;"></div>
+        <h1 class="tennis-hero-title">Bienvenue au Club</h1>
+        <p class="tennis-hero-subtitle">Exemples de Composants</p>
+        <button class="btn-tennis btn-tennis-cta btn-tennis-lg">Découvrir</button>
+    </section>
+
+    <!-- SECTION: BOUTONS -->
+    <section class="demo-section">
+        <h2 class="demo-title">🎯 Boutons</h2>
+        
+        <div class="component-preview">
+            <h3 style="margin-bottom: var(--space-md);">Tailles et styles</h3>
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; align-items: center;">
+                <button class="btn-tennis btn-tennis-primary">Bouton Principal</button>
+                <button class="btn-tennis btn-tennis-secondary">Bouton Secondaire</button>
+                <button class="btn-tennis btn-tennis-cta">Call-to-Action</button>
+                <button class="btn-tennis btn-tennis-outline">Bouton Outline</button>
+            </div>
+            
+            <div style="margin-top: var(--space-lg); display: flex; gap: var(--space-md); flex-wrap: wrap; align-items: center;">
+                <button class="btn-tennis btn-tennis-primary btn-tennis-sm">Petit</button>
+                <button class="btn-tennis btn-tennis-primary">Moyen</button>
+                <button class="btn-tennis btn-tennis-primary btn-tennis-lg">Grand</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CARTES -->
+    <section class="demo-section">
+        <h2 class="demo-title">📇 Cartes</h2>
+        
+        <div class="tennis-grid tennis-grid-3">
+            <div class="tennis-card">
+                <h3 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Cours Débutants</h3>
+                <p>Apprenez les bases du tennis avec nos moniteurs diplômés. Séances adaptées pour tous les âges.</p>
+                <div class="tennis-accent-bar"></div>
+                <button class="btn-tennis btn-tennis-secondary btn-tennis-sm" style="margin-top: var(--space-md);">En savoir plus</button>
+            </div>
+            
+            <div class="tennis-card">
+                <h3 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Compétition</h3>
+                <p>Rejoignez nos équipes et participez aux championnats régionaux et départementaux.</p>
+                <div class="tennis-accent-bar"></div>
+                <button class="btn-tennis btn-tennis-secondary btn-tennis-sm" style="margin-top: var(--space-md);">S'inscrire</button>
+            </div>
+            
+            <div class="tennis-card">
+                <h3 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Stage Vacances</h3>
+                <p>Stages intensifs pendant les vacances scolaires pour progresser rapidement.</p>
+                <div class="tennis-accent-bar"></div>
+                <button class="btn-tennis btn-tennis-secondary btn-tennis-sm" style="margin-top: var(--space-md);">Réserver</button>
+            </div>
+        </div>
+        
+        <h3 style="margin: var(--space-xl) 0 var(--space-md);">Carte avec en-tête</h3>
+        <div style="max-width: 500px;">
+            <div class="tennis-card-header">
+                Prochains Événements
+            </div>
+            <div class="tennis-card-body">
+                <ul class="tennis-list">
+                    <li class="tennis-list-item">Tournoi Interne - 15 Mars 2026</li>
+                    <li class="tennis-list-item">Journée Portes Ouvertes - 22 Mars 2026</li>
+                    <li class="tennis-list-item">Stage Printemps - 10-14 Avril 2026</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: BADGES -->
+    <section class="demo-section">
+        <h2 class="demo-title">🏷️ Badges</h2>
+        
+        <div class="component-preview">
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                <span class="badge-tennis badge-primary">Principal</span>
+                <span class="badge-tennis badge-secondary">Secondaire</span>
+                <span class="badge-tennis badge-accent">Nouveau</span>
+                <span class="badge-tennis badge-success">Complet</span>
+                <span class="badge-tennis badge-warning">Places limitées</span>
+                <span class="badge-tennis badge-error">Annulé</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ALERTES -->
+    <section class="demo-section">
+        <h2 class="demo-title">⚠️ Alertes & Messages</h2>
+        
+        <div style="max-width: 800px;">
+            <div class="tennis-alert tennis-alert-info">
+                <strong>Information :</strong> Les inscriptions pour la saison 2026-2027 ouvriront le 1er juin.
+            </div>
+            
+            <div class="tennis-alert tennis-alert-success">
+                <strong>Succès :</strong> Votre réservation de court a bien été enregistrée !
+            </div>
+            
+            <div class="tennis-alert tennis-alert-warning">
+                <strong>Attention :</strong> Plus que 3 places disponibles pour le stage de printemps.
+            </div>
+            
+            <div class="tennis-alert tennis-alert-error">
+                <strong>Erreur :</strong> Le paiement n'a pas pu être traité. Veuillez réessayer.
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FORMULAIRE -->
+    <section class="demo-section">
+        <h2 class="demo-title">📝 Formulaires</h2>
+        
+        <div style="max-width: 600px;">
+            <form>
+                <div class="tennis-form-group">
+                    <label class="tennis-label">Nom complet</label>
+                    <input type="text" class="tennis-input" placeholder="Jean Dupont">
+                </div>
+                
+                <div class="tennis-form-group">
+                    <label class="tennis-label">Email</label>
+                    <input type="email" class="tennis-input" placeholder="jean.dupont@email.com">
+                </div>
+                
+                <div class="tennis-form-group">
+                    <label class="tennis-label">Niveau de jeu</label>
+                    <input type="text" class="tennis-input" placeholder="Débutant, Intermédiaire, Avancé">
+                </div>
+                
+                <div class="tennis-form-group">
+                    <label class="tennis-label">Message</label>
+                    <textarea class="tennis-textarea" rows="4" placeholder="Parlez-nous de vos objectifs..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-tennis btn-tennis-cta">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION: SECTION TYPIQUE -->
+    <section class="tennis-section">
+        <h2 class="tennis-section-title">Pourquoi rejoindre notre club ?</h2>
+        
+        <div class="tennis-grid tennis-grid-3">
+            <div style="text-align: center; padding: var(--space-lg);">
+                <div style="font-size: 4em; margin-bottom: var(--space-md);">🎾</div>
+                <h3 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Installations Premium</h3>
+                <p style="color: var(--color-gray);">8 courts dont 4 couverts, éclairage LED, surfaces variées</p>
+            </div>
+            
+            <div style="text-align: center; padding: var(--space-lg);">
+                <div style="font-size: 4em; margin-bottom: var(--space-md);">👨‍🏫</div>
+                <h3 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Enseignants Qualifiés</h3>
+                <p style="color: var(--color-gray);">Équipe de moniteurs diplômés d'État, pédagogie adaptée</p>
+            </div>
+            
+            <div style="text-align: center; padding: var(--space-lg);">
+                <div style="font-size: 4em; margin-bottom: var(--space-md);">🏆</div>
+                <h3 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Esprit Compétition</h3>
+                <p style="color: var(--color-gray);">Équipes engagées en championnats, tournois réguliers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ÉLÉMENTS DÉCORATIFS -->
+    <section class="demo-section">
+        <h2 class="demo-title">🎨 Éléments Décoratifs</h2>
+        
+        <div class="component-preview">
+            <h3>Barre d'accent</h3>
+            <div class="tennis-accent-bar"></div>
+            
+            <h3 style="margin-top: var(--space-lg);">Séparateur</h3>
+            <div class="tennis-divider"></div>
+            
+            <h3>Balles décoratives</h3>
+            <div style="display: flex; gap: var(--space-lg); margin-top: var(--space-md);">
+                <div class="tennis-ball-decoration"></div>
+                <div class="tennis-ball-decoration" style="width: 100px; height: 100px;"></div>
+                <div class="tennis-ball-decoration" style="width: 120px; height: 120px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CLASSES UTILITAIRES -->
+    <section class="demo-section">
+        <h2 class="demo-title">🛠️ Classes Utilitaires</h2>
+        
+        <div class="component-preview">
+            <h3>Couleurs de texte</h3>
+            <p class="text-primary">Texte en bleu foncé principal</p>
+            <p class="text-secondary">Texte en bleu clair secondaire</p>
+            <p class="text-accent">Texte en jaune accent (foncé pour contraste)</p>
+            <p class="text-gray">Texte en gris pour informations secondaires</p>
+            
+            <h3 style="margin-top: var(--space-lg);">Fonds de couleur</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-sm);">
+                <div class="bg-primary p-md text-white text-center rounded-md">Fond principal</div>
+                <div class="bg-secondary p-md text-white text-center rounded-md">Fond secondaire</div>
+                <div class="bg-accent p-md text-center rounded-md">Fond accent</div>
+                <div class="bg-light p-md text-center rounded-md">Fond clair</div>
+            </div>
+            
+            <h3 style="margin-top: var(--space-lg);">Ombres</h3>
+            <div style="display: flex; gap: var(--space-lg); flex-wrap: wrap;">
+                <div class="shadow-sm p-lg bg-white rounded-md">Ombre petite</div>
+                <div class="shadow-md p-lg bg-white rounded-md">Ombre moyenne</div>
+                <div class="shadow-lg p-lg bg-white rounded-md">Ombre grande</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="tennis-footer">
+        <div class="tennis-footer-logo">U.S.O.BEZONS TENNIS</div>
+        <div class="tennis-footer-links">
+            <a href="#" class="tennis-footer-link">Contact</a>
+            <a href="#" class="tennis-footer-link">Mentions légales</a>
+            <a href="#" class="tennis-footer-link">Plan du site</a>
+            <a href="#" class="tennis-footer-link">Nous suivre</a>
+        </div>
+        <div class="tennis-divider" style="max-width: 300px; margin: var(--space-lg) auto;"></div>
+        <p style="font-size: 0.9em; opacity: 0.8;">© 2026 U.S.O.Bezons Tennis - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

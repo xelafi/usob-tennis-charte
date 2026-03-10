@@ -1,0 +1,846 @@
+/* ========================================
+   U.S.O.BEZONS TENNIS - CHARTE GRAPHIQUE
+   ======================================== */
+
+/* Variables CSS pour la charte */
+:root {
+    /* Couleurs principales */
+    --color-primary: #0D2B5B;          /* Bleu foncé */
+    --color-primary-light: #1a4080;    /* Bleu foncé clair */
+    --color-primary-dark: #081b3a;     /* Bleu foncé très sombre */
+    
+    --color-secondary: #3366B8;        /* Bleu clair */
+    --color-secondary-light: #5c8ad4;  /* Bleu clair lumineux */
+    --color-secondary-dark: #2952a3;   /* Bleu clair sombre */
+    
+    --color-accent: #FEE02E;           /* Jaune tennis */
+    --color-accent-dark: #E6C200;      /* Jaune foncé (meilleur contraste) */
+    --color-accent-light: #FFF176;     /* Jaune clair */
+    
+    --color-neutral: #FFFFFF;          /* Blanc */
+    --color-neutral-light: #F8F9FA;    /* Blanc cassé */
+    --color-neutral-dark: #E9ECEF;     /* Gris très clair */
+    
+    /* Couleurs tertiaires */
+    --color-gray: #4A5568;             /* Gris anthracite */
+    --color-gray-light: #718096;       /* Gris moyen */
+    --color-gray-dark: #2D3748;        /* Gris foncé */
+    
+    /* Couleurs d'état */
+    --color-success: #10B981;          /* Vert succès */
+    --color-error: #EF4444;            /* Rouge erreur */
+    --color-warning: #F59E0B;          /* Orange avertissement */
+    --color-info: #3366B8;             /* Bleu information */
+    
+    /* Typographies */
+    --font-title: 'Montserrat', sans-serif;
+    --font-title-alt: 'Bebas Neue', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+    --font-text-alt: 'Roboto', sans-serif;
+    
+    /* Hiérarchie typographique */
+    --font-size-h1: 3.5em;             /* 56px base */
+    --font-size-h2: 2.5em;             /* 40px base */
+    --font-size-h3: 1.75em;            /* 28px base */
+    --font-size-h4: 1.25em;            /* 20px base */
+    --font-size-body: 1.2em;           /* 19.2px base */
+    --font-size-small: 0.9em;          /* 14.4px base */
+    
+    /* Graisses */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Système d'espacement (multiples de 8px) */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-2xl: 64px;
+    --space-3xl: 96px;
+    
+    /* Bordures */
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --radius-xl: 50px;                 /* Pour boutons pill */
+    
+    /* Ombres */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================
+   STYLES GLOBAUX
+   ======================================== */
+
+.reveal {
+    font-family: var(--font-text);
+    color: var(--color-primary);
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--space-md);
+}
+
+.reveal h1 {
+    font-size: var(--font-size-h1);
+    color: var(--color-neutral);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.reveal h2 {
+    font-size: var(--font-size-h2);
+    color: var(--color-primary);
+    margin-bottom: var(--space-xl);
+}
+
+/* Réduction de h2 pour slides avec plus de contenu */
+.reveal section[data-background="#FFFFFF"] h2 {
+    font-size: 2em;
+    margin-bottom: var(--space-md);
+}
+
+.reveal h3 {
+    font-size: var(--font-size-h3);
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.reveal h4 {
+    font-size: var(--font-size-h4);
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.reveal section[data-background="#0D2B5B"] h2,
+.reveal section[data-background*="linear-gradient"] h2 {
+    color: var(--color-neutral);
+}
+
+.reveal p {
+    font-family: var(--font-text);
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+/* ========================================
+   PAGE DE TITRE
+   ======================================== */
+
+.club-name {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 4em !important;
+    color: var(--color-neutral);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitle {
+    font-family: var(--font-text);
+    font-size: 1.8em;
+    color: var(--color-accent);
+    font-weight: 300;
+}
+
+/* Décoration balle de tennis */
+.tennis-ball-decoration {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+}
+
+.tennis-ball-decoration.large {
+    width: 250px;
+    height: 250px;
+    bottom: 100px;
+    right: 150px;
+}
+
+.tennis-ball-decoration::before,
+.tennis-ball-decoration::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    border-radius: 50%;
+    top: 50%;
+    left: 10%;
+    transform: rotate(-30deg);
+}
+
+.tennis-ball-decoration::after {
+    transform: rotate(30deg);
+}
+
+/* ========================================
+   COULEURS - GRILLE
+   ======================================== */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+    padding: 0 var(--space-2xl);
+}
+
+.color-box {
+    background: var(--color-neutral-light);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-10px);
+}
+
+.color-sample {
+    width: 100%;
+    height: 150px;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.color-sample.white-border {
+    border: 2px solid #ddd;
+}
+
+.color-box h3 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h3);
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    text-transform: none;
+}
+
+.color-code {
+    font-family: 'Courier New', monospace;
+    font-size: var(--font-size-small);
+    color: var(--color-gray);
+    margin: var(--space-xs) 0;
+}
+
+.color-usage {
+    font-size: var(--font-size-small);
+    color: var(--color-secondary);
+    font-style: italic;
+    margin-top: var(--space-sm);
+}
+
+/* ========================================
+   TYPOGRAPHIE
+   ======================================== */
+
+.typo-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.typo-example {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    border-left: 5px solid var(--color-accent);
+}
+
+.typo-example h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.typo-example p {
+    font-family: var(--font-text);
+    font-size: 1em;
+    color: var(--color-neutral);
+    opacity: 0.8;
+}
+
+/* ========================================
+   STYLE GRAPHIQUE
+   ======================================== */
+
+.style-elements {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.style-item {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.style-item p {
+    color: var(--color-neutral);
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+/* Icône balle de tennis */
+.tennis-ball-icon {
+    width: 100px;
+    height: 100px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    border: 3px solid var(--color-neutral);
+}
+
+.tennis-ball-icon::before,
+.tennis-ball-icon::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: var(--color-neutral);
+    border-radius: 50%;
+    top: 50%;
+    left: 15%;
+}
+
+.tennis-ball-icon::before {
+    transform: rotate(-30deg);
+}
+
+.tennis-ball-icon::after {
+    transform: rotate(30deg);
+}
+
+/* Lignes de court */
+.court-lines {
+    width: 120px;
+    height: 100px;
+    margin: 0 auto;
+    border: 3px solid var(--color-neutral);
+    position: relative;
+    border-radius: 5px;
+}
+
+.court-lines::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: var(--color-neutral);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.court-lines::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 2px solid var(--color-accent);
+    top: 20%;
+    left: 20%;
+}
+
+/* Lignes dynamiques */
+.dynamic-lines {
+    width: 120px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.dynamic-lines::before,
+.dynamic-lines::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-neutral) 100%);
+}
+
+.dynamic-lines::before {
+    top: 25%;
+    transform: skewY(-10deg);
+}
+
+.dynamic-lines::after {
+    top: 50%;
+    transform: skewY(10deg);
+}
+
+.style-description {
+    font-size: 1.5em;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+/* ========================================
+   BOUTONS
+   ======================================== */
+
+.button-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.btn {
+    font-family: var(--font-title);
+    font-size: 1.2em;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+}
+
+.btn-secondary {
+    background: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.btn-secondary:hover {
+    background: var(--color-secondary-dark);
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.btn-accent:hover {
+    background: var(--color-accent-dark);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+}
+
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+/* ========================================
+   EXEMPLE DE CONTENU
+   ======================================== */
+
+.content-example {
+    text-align: center;
+    padding: 50px;
+}
+
+.content-example h2 {
+    color: var(--color-neutral);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.highlight-bar {
+    width: 200px;
+    height: 5px;
+    background: var(--color-accent);
+    margin: 0 auto 30px;
+    border-radius: 3px;
+}
+
+.lead-text {
+    font-size: 1.8em;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.content-example p {
+    color: var(--color-neutral);
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   APPLICATIONS
+   ======================================== */
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+    padding: 0 100px;
+}
+
+.app-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-left: 5px solid var(--color-primary);
+}
+
+.app-item:hover {
+    transform: translateY(-10px);
+    border-left-color: var(--color-accent);
+}
+
+.app-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.app-item h4 {
+    font-family: var(--font-title);
+    font-size: 1.5em;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.app-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ========================================
+   SLIDE FINALE
+   ======================================== */
+
+.closing-text {
+    font-size: 1.8em;
+    color: var(--color-accent);
+    font-style: italic;
+    margin-top: 40px;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation pour les éléments au scroll */
+.reveal .slides section > * {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .color-grid,
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .club-name {
+        font-size: 2.5em !important;
+    }
+    
+    .btn {
+        padding: 15px 40px;
+        font-size: 1em;
+    }
+}
+
+/* ========================================
+   NOUVELLES SECTIONS - AMÉLIORATIONS
+   ======================================== */
+
+/* Grille étendue pour couleurs tertiaires */
+.color-grid-extended {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    padding: 0 var(--space-xl);
+}
+
+.color-box-small {
+    background: var(--color-neutral-light);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.color-box-small:hover {
+    transform: translateY(-3px);
+}
+
+.color-sample-small {
+    width: 100%;
+    height: 60px;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.color-box-small h4 {
+    font-size: 0.85em;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+.color-code-small {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7em;
+    color: var(--color-gray);
+}
+
+/* Variations de couleurs */
+.color-variations {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+    padding: 0 var(--space-xl);
+}
+
+.variation-group {
+    background: var(--color-neutral-light);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+}
+
+.variation-group h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.variation-row {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.variation-item {
+    text-align: center;
+}
+
+.variation-sample {
+    width: 90px;
+    height: 60px;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-xs);
+    box-shadow: var(--shadow-sm);
+}
+
+.variation-item span {
+    font-size: 0.75em;
+    color: var(--color-gray);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Hiérarchie typographique */
+.typo-hierarchy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    padding: 0 var(--space-xl);
+}
+
+.typo-level {
+    background: var(--color-neutral-light);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--color-accent);
+}
+
+.typo-level h1 {
+    font-size: 2em !important;
+    margin: 10px 0 !important;
+}
+
+.typo-level h2 {
+    font-size: 1.5em !important;
+    margin: 8px 0 !important;
+}
+
+.typo-level h3 {
+    font-size: 1.2em !important;
+    margin: 6px 0 !important;
+}
+
+.typo-level p {
+    font-size: 0.9em !important;
+    margin: 5px 0 !important;
+}
+
+.typo-spec {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7em;
+    color: var(--color-gray-light);
+    margin-top: 5px;
+}
+
+/* Système d'espacement */
+.spacing-system {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    padding: 0 var(--space-2xl);
+}
+
+.spacing-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.spacing-bar {
+    height: 30px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.spacing-item span {
+    color: var(--color-neutral);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    font-weight: var(--font-weight-medium);
+}
+
+/* Accessibilité */
+.accessibility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    padding: 0 var(--space-xl);
+}
+
+.access-card {
+    background: var(--color-neutral-light);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+    border: 2px solid var(--color-neutral-dark);
+    transition: all 0.3s ease;
+}
+
+.access-card.success {
+    border-color: var(--color-success);
+}
+
+.access-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.access-icon {
+    font-size: 2em;
+    margin-bottom: var(--space-xs);
+}
+
+.access-card h3 {
+    color: var(--color-primary);
+    font-size: 1em;
+    margin-bottom: var(--space-xs);
+    text-transform: none;
+}
+
+.contrast-example {
+    font-family: var(--font-text);
+    padding: 10px !important;
+    margin: 10px 0 !important;
+}
+
+.contrast-example p {
+    font-size: 0.85em !important;
+}
+
+.contrast-example strong {
+    font-weight: var(--font-weight-bold);
+}
+
+/* Responsive pour nouvelles sections */
+@media (max-width: 768px) {
+    .color-grid-extended {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .accessibility-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .variation-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

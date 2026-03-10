@@ -1,0 +1,539 @@
+/* ================================================
+   SNIPPETS CSS - U.S.O.BEZONS TENNIS
+   Composants réutilisables pour votre charte
+   ================================================ */
+
+/* ========================================
+   CARTES & CONTAINERS
+   ======================================== */
+
+/* Carte standard */
+.tennis-card {
+    background: var(--color-neutral);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--color-accent);
+    transition: all 0.3s ease;
+}
+
+.tennis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Carte avec en-tête bleu */
+.tennis-card-header {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    font-family: var(--font-title);
+    font-weight: var (--font-weight-bold);
+    text-transform: uppercase;
+}
+
+.tennis-card-body {
+    background: var(--color-neutral);
+    padding: var(--space-lg);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Container de section */
+.tennis-section {
+    padding: var(--space-3xl) var(--space-2xl);
+    background: var(--color-neutral-light);
+}
+
+.tennis-section-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h2);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tennis-section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--color-accent);
+    margin: var(--space-md) auto 0;
+}
+
+/* ========================================
+   BOUTONS PERSONNALISÉS
+   ======================================== */
+
+/* Bouton base */
+.btn-tennis {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-bold);
+    padding: 18px 50px;
+    border: none;
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    font-size: 1.2em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-tennis:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Bouton principal */
+.btn-tennis-primary {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+.btn-tennis-primary:hover {
+    background: var(--color-primary-light);
+}
+
+/* Bouton secondaire */
+.btn-tennis-secondary {
+    background: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.btn-tennis-secondary:hover {
+    background: var(--color-secondary-dark);
+}
+
+/* Bouton accent (CTA) */
+.btn-tennis-cta {
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.btn-tennis-cta:hover {
+    background: var(--color-accent-dark);
+}
+
+/* Bouton outline */
+.btn-tennis-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+}
+
+.btn-tennis-outline:hover {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+/* Petits boutons */
+.btn-tennis-sm {
+    padding: 12px 30px;
+    font-size: 0.9em;
+}
+
+/* Grands boutons */
+.btn-tennis-lg {
+    padding: 24px 60px;
+    font-size: 1.4em;
+}
+
+/* ========================================
+   BADGES & ÉTIQUETTES
+   ======================================== */
+
+.badge-tennis {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-md);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.badge-primary {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+.badge-secondary {
+    background: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.badge-accent {
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.badge-success {
+    background: var(--color-success);
+    color: var(--color-neutral);
+}
+
+.badge-warning {
+    background: var(--color-warning);
+    color: var(--color-neutral);
+}
+
+.badge-error {
+    background: var(--color-error);
+    color: var(--color-neutral);
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.tennis-header {
+    background: var(--color-primary);
+    padding: var(--space-md) var(--space-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.tennis-nav {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.tennis-nav-link {
+    color: var(--color-neutral);
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-medium);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+}
+
+.tennis-nav-link:hover,
+.tennis-nav-link.active {
+    background: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.tennis-nav-link.cta {
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+
+/* ========================================
+   FORMULAIRES
+   ======================================== */
+
+.tennis-form-group {
+    margin-bottom: var(--space-md);
+}
+
+.tennis-label {
+    display: block;
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    font-size: var(--font-size-body);
+}
+
+.tennis-input,
+.tennis-textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 2px solid var(--color-neutral-dark);
+    border-radius: var(--radius-md);
+    font-family: var(--font-text);
+    font-size: var(--font-size-body);
+    transition: all 0.3s ease;
+}
+
+.tennis-input:focus,
+.tennis-textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 3px rgba(51, 102, 184, 0.1);
+}
+
+.tennis-input.error {
+    border-color: var(--color-error);
+}
+
+.tennis-input.success {
+    border-color: var(--color-success);
+}
+
+/* ========================================
+   ALERTES & MESSAGES
+   ======================================== */
+
+.tennis-alert {
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-text);
+    border-left: 4px solid;
+}
+
+.tennis-alert-info {
+    background: rgba(51, 102, 184, 0.1);
+    border-color: var(--color-info);
+    color: var(--color-primary);
+}
+
+.tennis-alert-success {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: var(--color-success);
+    color: var(--color-gray-dark);
+}
+
+.tennis-alert-warning {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: var(--color-warning);
+    color: var(--color-gray-dark);
+}
+
+.tennis-alert-error {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--color-error);
+    color: var(--color-gray-dark);
+}
+
+/* ========================================
+   LISTES & ITEMS
+   ======================================== */
+
+.tennis-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tennis-list-item {
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--color-neutral-dark);
+    transition: background 0.3s ease;
+}
+
+.tennis-list-item:hover {
+    background: var(--color-neutral-light);
+}
+
+.tennis-list-item::before {
+    content: '🎾';
+    margin-right: var(--space-sm);
+}
+
+/* ========================================
+   GRILLES
+   ======================================== */
+
+.tennis-grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.tennis-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tennis-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tennis-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+    .tennis-grid-2,
+    .tennis-grid-3,
+    .tennis-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   EFFETS DÉCORATIFS
+   ======================================== */
+
+/* Balle de tennis décorative */
+.tennis-ball-decoration {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.tennis-ball-decoration::before,
+.tennis-ball-decoration::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    top: 50%;
+    left: 15%;
+    border-radius: 50%;
+}
+
+.tennis-ball-decoration::before {
+    transform: rotate(-30deg);
+}
+
+.tennis-ball-decoration::after {
+    transform: rotate(30deg);
+}
+
+/* Ligne de séparation */
+.tennis-divider {
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--color-accent) 20%, 
+        var(--color-accent) 80%, 
+        transparent 100%);
+    margin: var(--space-xl) 0;
+}
+
+/* Barre d'accent */
+.tennis-accent-bar {
+    width: 80px;
+    height: 4px;
+    background: var(--color-accent);
+    margin: var(--space-sm) 0;
+}
+
+/* Fond dégradé */
+.tennis-gradient-bg {
+    background: linear-gradient(135deg, 
+        var(--color-primary) 0%, 
+        var(--color-secondary) 100%);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.tennis-hero {
+    background: linear-gradient(135deg, 
+        var(--color-primary) 0%, 
+        var(--color-secondary) 100%);
+    padding: var(--space-3xl) var(--space-2xl);
+    text-align: center;
+    color: var(--color-neutral);
+    position: relative;
+    overflow: hidden;
+}
+
+.tennis-hero-title {
+    font-family: var(--font-title);
+    font-size: 4em;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: var(--space-md);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tennis-hero-subtitle {
+    font-size: 1.8em;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xl);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.tennis-footer {
+    background: var(--color-primary);
+    color: var(--color-neutral);
+    padding: var(--space-2xl) var(--space-lg);
+    text-align: center;
+}
+
+.tennis-footer-logo {
+    font-family: var(--font-title);
+    font-size: 2em;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-md);
+}
+
+.tennis-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.tennis-footer-link {
+    color: var(--color-neutral);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tennis-footer-link:hover {
+    color: var(--color-accent);
+}
+
+/* ========================================
+   UTILITAIRES
+   ======================================== */
+
+/* Texte */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent-dark); }
+.text-gray { color: var(--color-gray); }
+.text-white { color: var(--color-neutral); }
+
+/* Fond */
+.bg-primary { background: var(--color-primary); }
+.bg-secondary { background: var(--color-secondary); }
+.bg-accent { background: var(--color-accent); }
+.bg-light { background: var(--color-neutral-light); }
+.bg-white { background: var(--color-neutral); }
+
+/* Marges */
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+/* Padding */
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+
+/* Ombres */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* Bordures arrondies */
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-full { border-radius: 50%; }
+
+/* Texte */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-uppercase { text-transform: uppercase; }
+.text-bold { font-weight: var(--font-weight-bold); }
