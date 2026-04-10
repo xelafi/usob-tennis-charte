@@ -5,32 +5,36 @@
 /* Variables CSS pour la charte */
 :root {
     /* Couleurs principales */
-    --color-primary: #0D2B5B;          /* Bleu foncé */
-    --color-primary-light: #1a4080;    /* Bleu foncé clair */
-    --color-primary-dark: #081b3a;     /* Bleu foncé très sombre */
+    --color-primary: #14285A;          /* Bleu foncé */
+    --color-primary-light: #234687;    /* Bleu foncé clair */
+    --color-primary-dark: #0A142D;     /* Bleu foncé très sombre */
     
-    --color-secondary: #3366B8;        /* Bleu clair */
-    --color-secondary-light: #5c8ad4;  /* Bleu clair lumineux */
-    --color-secondary-dark: #2952a3;   /* Bleu clair sombre */
+    --color-secondary: #AFDBF6;        /* Bleu officiel USOB */
+    --color-secondary-light: #D7EBFA;  /* Bleu officiel clair */
+    --color-secondary-dark: #50A0DC;   /* Bleu officiel foncé */
     
-    --color-accent: #FEE02E;           /* Jaune tennis */
-    --color-accent-dark: #E6C200;      /* Jaune foncé (meilleur contraste) */
-    --color-accent-light: #FFF176;     /* Jaune clair */
+    --color-accent: #FEE12E;           /* Jaune officiel USOB */
+    --color-accent-dark: #E6BE14;      /* Jaune foncé (meilleur contraste) */
+    --color-accent-light: #FFF078;     /* Jaune clair */
     
     --color-neutral: #FFFFFF;          /* Blanc */
     --color-neutral-light: #F8F9FA;    /* Blanc cassé */
     --color-neutral-dark: #E9ECEF;     /* Gris très clair */
     
     /* Couleurs tertiaires */
+    --color-tertiary: #EC1827;         /* Rouge officiel USOB */
+    --color-tertiary-light: #F04654;   /* Rouge clair */
+    --color-tertiary-dark: #C0131F;    /* Rouge foncé */
+    
     --color-gray: #4A5568;             /* Gris anthracite */
     --color-gray-light: #718096;       /* Gris moyen */
     --color-gray-dark: #2D3748;        /* Gris foncé */
     
     /* Couleurs d'état */
     --color-success: #10B981;          /* Vert succès */
-    --color-error: #EF4444;            /* Rouge erreur */
+    --color-error: #EC1827;            /* Rouge erreur (tertiaire) */
     --color-warning: #F59E0B;          /* Orange avertissement */
-    --color-info: #3366B8;             /* Bleu information */
+    --color-info: #AFDBF6;             /* Bleu information (secondaire) */
     
     /* Typographies */
     --font-title: 'Montserrat', sans-serif;
@@ -120,7 +124,7 @@
     margin-bottom: var(--space-sm);
 }
 
-.reveal section[data-background="#0D2B5B"] h2,
+.reveal section[data-background="#14285A"] h2,
 .reveal section[data-background*="linear-gradient"] h2 {
     color: var(--color-neutral);
 }
@@ -239,7 +243,7 @@
 
 .color-usage {
     font-size: var(--font-size-small);
-    color: var(--color-secondary);
+    color: var(--color-gray);
     font-style: italic;
     margin-top: var(--space-sm);
 }
@@ -432,12 +436,12 @@
 }
 
 .btn-secondary {
-    background: var(--color-secondary);
+    background: var(--color-secondary-dark);
     color: var(--color-neutral);
 }
 
 .btn-secondary:hover {
-    background: var(--color-secondary-dark);
+    background: #3477f3;
 }
 
 .btn-accent {

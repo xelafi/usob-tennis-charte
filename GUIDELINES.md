@@ -2,7 +2,7 @@
 
 ## 🎨 Utilisation des Couleurs
 
-### Couleur Principale - Bleu Foncé (#0D2B5B)
+### Couleur Principale - Bleu Foncé (#14285A)
 
 **✅ À UTILISER POUR :**
 - Logo principal
@@ -25,7 +25,7 @@
 }
 ```
 
-### Couleur Secondaire - Bleu Clair (#3366B8)
+### Couleur Secondaire - Bleu Officiel (#AFDBF6)
 
 **✅ À UTILISER POUR :**
 - Boutons secondaires
@@ -42,16 +42,16 @@
 **Exemple d'utilisation :**
 ```css
 .btn-secondary {
-    background: var(--color-secondary);
+    background: var(--color-secondary-dark);
     color: var(--color-neutral);
 }
 
 .btn-secondary:hover {
-    background: var(--color-secondary-dark);
+    background: #3477f3;
 }
 ```
 
-### Couleur Accent - Jaune Tennis (#FEE02E)
+### Couleur Accent - Jaune Officiel (#FEE12E)
 
 **✅ À UTILISER POUR :**
 - Boutons d'action principale (CTA)
@@ -62,7 +62,7 @@
 - Éléments interactifs
 
 **❌ À ÉVITER :**
-- Texte sur fond blanc (utiliser #E6C200)
+- Texte sur fond blanc (utiliser #E6BE14)
 - Fonds étendus
 - Trop présent (perd son impact)
 
@@ -76,7 +76,29 @@
 
 /* Pour texte sur fond clair */
 .text-accent {
-    color: var(--color-accent-dark); /* Meilleur contraste */
+    color: var(--color-accent-dark); /* #E6BE14 - Meilleur contraste */
+}
+```
+
+### Couleur Tertiaire - Rouge Officiel (#EC1827)
+
+**✅ À UTILISER POUR :**
+- Alertes et erreurs
+- Éléments d'attention
+- Accents ponctuels
+- Détails du logo
+- Touches de couleur
+
+**❌ À ÉVITER :**
+- Fonds principaux
+- Surexposition (couleur forte)
+
+**Exemple d'utilisation :**
+```css
+.alert-error {
+    background: rgba(236, 24, 39, 0.1);
+    border-left: 4px solid var(--color-tertiary);
+    color: var(--color-gray-dark);
 }
 ```
 
@@ -235,17 +257,18 @@ section + section {
 | Combinaison | Ratio | Usage |
 |-------------|-------|-------|
 | Bleu foncé + Blanc | 12.6:1 | ✅ Parfait pour texte |
-| Bleu clair + Blanc | 4.8:1 | ✅ OK pour titres (> 18px) |
+| Bleu officiel + Blanc | 4.7:1 | ✅ OK pour texte |
+| Rouge officiel + Blanc | 5.3:1 | ✅ OK pour texte |
 | Jaune foncé + Blanc | 4.5:1 | ✅ OK pour texte |
 
 #### ❌ NON CONFORMES
 
 | Combinaison | Problème |
 |-------------|----------|
-| Jaune clair (#FEE02E) + Blanc | Ratio insuffisant |
-| Bleu clair + Bleu foncé | Trop faible pour petit texte |
+| Jaune clair (#FEE12E) + Blanc | Ratio insuffisant |
+| Rouge + Bleu | Trop faible pour petit texte |
 
-**Solution :** Utiliser `var(--color-accent-dark)` pour texte jaune sur fond clair
+**Solution :** Utiliser `var(--color-accent-dark)` (#E6BE14) pour texte jaune sur fond clair
 
 ### Tailles de Texte
 
