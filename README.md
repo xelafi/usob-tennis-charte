@@ -5,14 +5,14 @@ Présentation Reveal.js de la charte graphique du club U.S.O.Bezons Tennis.
 ## 📋 Contenu de la présentation
 
 ### 1. **Couleurs principales** 🎨
-- **Bleu foncé** (#0D2B5B) - Couleur principale du club
-- **Bleu clair** (#3366B8) - Couleur secondaire
-- **Jaune tennis** (#FEE02E) - Couleur accent (rappel de la balle)
+- **Bleu foncé** (#14285A) - Couleur principale du club
+- **Bleu officiel** (#AFDBF6) - Couleur secondaire USOB
+- **Jaune officiel** (#FEE12E) - Couleur d'accent (rappel de la balle)
 - **Blanc** (#FFFFFF) - Couleur neutre
 
 ### 2. **Couleurs enrichies** ✨
 - **Variations de luminosité** pour chaque couleur principale (light/dark)
-- **Couleurs tertiaires** : Gris anthracite (#4A5568) pour textes secondaires
+- **Couleurs tertiaires** : Rouge officiel (#EC1827), Gris anthracite (#4A5568)
 - **Couleurs d'état** : Succès, Erreur, Avertissement, Info
 
 ### 3. **Typographies**
@@ -102,17 +102,17 @@ USOB Tennis/
 
 #### Couleurs principales
 ```css
---color-primary: #0D2B5B;          /* Bleu foncé */
---color-primary-light: #1a4080;
---color-primary-dark: #081b3a;
+--color-primary: #14285A;          /* Bleu foncé */
+--color-primary-light: #234687;
+--color-primary-dark: #0A142D;
 
---color-secondary: #3366B8;        /* Bleu clair */
---color-secondary-light: #5c8ad4;
---color-secondary-dark: #2952a3;
+--color-secondary: #AFDBF6;        /* Bleu officiel USOB */
+--color-secondary-light: #D7EBFA;
+--color-secondary-dark: #50A0DC;
 
---color-accent: #FEE02E;           /* Jaune tennis */
---color-accent-dark: #E6C200;      /* Meilleur contraste */
---color-accent-light: #FFF176;
+--color-accent: #FEE12E;           /* Jaune officiel USOB */
+--color-accent-dark: #E6BE14;      /* Meilleur contraste */
+--color-accent-light: #FFF078;
 
 --color-neutral: #FFFFFF;          /* Blanc */
 --color-neutral-light: #F8F9FA;
@@ -121,14 +121,18 @@ USOB Tennis/
 
 #### Couleurs tertiaires & d'état
 ```css
+--color-tertiary: #EC1827;         /* Rouge officiel USOB */
+--color-tertiary-light: #F04654;
+--color-tertiary-dark: #C0131F;
+
 --color-gray: #4A5568;             /* Gris anthracite */
 --color-gray-light: #718096;
 --color-gray-dark: #2D3748;
 
 --color-success: #10B981;          /* Vert succès */
---color-error: #EF4444;            /* Rouge erreur */
+--color-error: #EC1827;            /* Rouge erreur (tertiaire) */
 --color-warning: #F59E0B;          /* Orange avertissement */
---color-info: #3366B8;             /* Bleu information */
+--color-info: #AFDBF6;             /* Bleu information (secondaire) */
 ```
 
 #### Typographie

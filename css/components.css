@@ -102,12 +102,12 @@
 
 /* Bouton secondaire */
 .btn-tennis-secondary {
-    background: var(--color-secondary);
+    background: var(--color-secondary-dark);
     color: var(--color-neutral);
 }
 
 .btn-tennis-secondary:hover {
-    background: var(--color-secondary-dark);
+    background: #3477f3;
 }
 
 /* Bouton accent (CTA) */
@@ -258,7 +258,7 @@
 .tennis-textarea:focus {
     outline: none;
     border-color: var(--color-secondary);
-    box-shadow: 0 0 0 3px rgba(51, 102, 184, 0.1);
+    box-shadow: 0 0 0 3px rgba(10, 138, 186, 0.1);
 }
 
 .tennis-input.error {
@@ -282,7 +282,7 @@
 }
 
 .tennis-alert-info {
-    background: rgba(51, 102, 184, 0.1);
+    background: rgba(10, 138, 186, 0.1);
     border-color: var(--color-info);
     color: var(--color-primary);
 }
@@ -300,7 +300,7 @@
 }
 
 .tennis-alert-error {
-    background: rgba(239, 68, 68, 0.1);
+    background: rgba(236, 24, 39, 0.1);
     border-color: var(--color-error);
     color: var(--color-gray-dark);
 }
