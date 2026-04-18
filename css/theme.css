@@ -667,32 +667,35 @@
 .color-variations {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-lg);
     margin-top: var(--space-lg);
     padding: 0 var(--space-xl);
 }
 
 .variation-group {
     background: var(--color-neutral-light);
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-md);
 }
 
 .variation-group h4 {
     color: var(--color-primary);
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-sm);
     text-transform: uppercase;
     font-size: 0.9em;
 }
 
 .variation-row {
     display: flex;
-    gap: var(--space-sm);
+    gap: var(--space-3xl);
     justify-content: center;
 }
 
 .variation-item {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .variation-sample {
@@ -707,6 +710,16 @@
     font-size: 0.75em;
     color: var(--color-gray);
     font-weight: var(--font-weight-medium);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.variation-item .color-code-small {
+    font-family: 'Courier New', monospace;
+    font-size: 0.65em;
+    color: var(--color-gray);
+    display: block;
+    margin-top: 2px;
 }
 
 /* Hiérarchie typographique */
