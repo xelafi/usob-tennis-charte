@@ -218,17 +218,27 @@
                 </div>
             </section>
 
-            <!-- Slide 9b : Mockup -->
+            <!-- Slide 9 : Logo -->
             <section data-background="#FFFFFF">
+                <h2>Logo U.S.O.Bezons Tennis</h2>
+                <div class="logo-container">
+                    <img src="logo.png" alt="Logo U.S.O.Bezons Tennis" class="logo-image">
+                </div>
+            </section>
+
+            <!-- Slide 10 : Mockup -->
+            <section data-background="#FFFFFF" class="mockup-slide">
                 <h2>Mockup Produits</h2>
-                <img src="mockup.jpg" alt="Mockup produits U.S.O.Bezons Tennis" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
+                <div class="mockup-container">
+                    <img src="mockup.jpg" alt="Mockup produits U.S.O.Bezons Tennis" class="mockup-image">
+                </div>
             </section>
 
             <!-- Slide 10 : Finale -->
             <section data-background="#14285A">
                 <h1 class="club-name">U.S.O.BEZONS TENNIS</h1>
-                <img src="pngtree-tennis-ball-realistic-sport-green-png-image_4655231.png" alt="Tennis Ball" class="tennis-ball-decoration large">
-                <p class="closing-text">Charte Graphique</p>
+                <p class="subtitle">Charte Graphique</p>
+                <img src="pngtree-tennis-ball-realistic-sport-green-png-image_4655231.png" alt="Tennis Ball" class="tennis-ball-decoration">
             </section>
 
         </div>
@@ -246,11 +256,25 @@
             progress: true,
             center: true,
             slideNumber: true,
+            
+            // Configuration responsive optimale
             width: 1920,
             height: 1080,
-            margin: 0.15,
-            minScale: 0.2,
+            margin: 0.1,
+            minScale: 0.1,
             maxScale: 2.0,
+            
+            // Activer le mode responsive
+            embedded: false,
+            respondToHashChanges: true,
+            
+            // Améliorations tactiles pour mobile
+            touch: true,
+            loop: false,
+            shuffle: false,
+            
+            // Désactiver le préchargement d'iframes pour mobile
+            preloadIframes: null,
         });
     </script>
 </body>
